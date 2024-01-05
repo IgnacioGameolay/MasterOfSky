@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 78277756}
   - component: {fileID: 78277758}
   - component: {fileID: 78277757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Planes_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1106,7 @@ BuoyancyEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_SurfaceLevel: 0.35
   m_Density: 5
   m_LinearDrag: 5
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 686402072}
   - component: {fileID: 686402076}
   - component: {fileID: 686402075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Planes_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
