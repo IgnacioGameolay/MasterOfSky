@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
 
-    public float speed = 5f;
+    public float speed;
+    public float speedRot = 5f;
+    public float speedMax = 5f;
 
     private void Start()
     {
@@ -26,6 +28,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(movementX, movementY) * speed;
+        //rb.velocity = new Vector2(movementX, movementY) * speed;
+        rb.rotation -= movementX * speedRot;
+        speed = Mathf.Clamp(speed+movementY, 1.5f, 5);
+        rb.velocity = transform.up * speed;
     }
 }
